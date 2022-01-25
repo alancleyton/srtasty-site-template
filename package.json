@@ -1,0 +1,20 @@
+{
+  "name": "srtasty_webapp_template",
+  "version": "1.0.0",
+  "description": "Simple food delivery web app template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alancleyton/srtasty_webapp_template.git"
+  },
+  "keywords": [],
+  "author": "Alan Cleyton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alancleyton/srtasty_webapp_template/issues"
+  },
+  "homepage": "https://github.com/alancleyton/srtasty_webapp_template#readme"
+}
