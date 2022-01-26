@@ -1,0 +1,81 @@
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: $gray-1;
+  appearance: button;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: $merriweather;
+  font-weight: $font-weight-medium;
+  font-size: 14;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  &:disabled {
+    cursor: default;
+  }
+
+  // Button variant colors
+  @each $variant, $color in $colors-variants {
+    &.#{$variant} {
+      @include button-color-variant($color);
+    }
+  }
+
+  // Button variant colors outlined
+  @each $variant, $color in $colors-variants {
+    &.#{$variant}.outlined {
+      @include button-outlined-color-variant($color);
+    }
+  }
+
+  // Button link variant
+  &.link {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: $dark-2 !important;
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+      text-decoration: underline !important;
+      outline: none !important;
+    }
+    &:disabled,
+    &.disabled {
+      color: $dark-2;
+    }
+  }
+
+  // Button sizes
+  &.small {
+    padding: $button-small-padding;
+    font-size: $button-small-font-size;
+  }
+  &.medium {
+    padding: $button-medium-padding;
+    font-size: $button-medium-font-size;
+  }
+  &.large {
+    padding: $button-large-padding;
+    font-size: $button-large-font-size;
+  }
+  &.huge {
+    padding: $button-huge-padding;
+    font-size: $button-huge-font-size;
+  }
+
+  // Pill button
+  &.pill {
+    border-radius: 9999px !important;
+  }
+
+  // Full width button
+  &.block {
+    width: 100% !important;
+  }
+}

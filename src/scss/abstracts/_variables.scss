@@ -21,6 +21,18 @@ $blue-3: #56ccf2;
 $purple-1: #9b51e0;
 $purple-2: #bb6bd9;
 
+// Colors variants
+$colors-variants: (
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green-3,
+  "blue": $blue-1,
+  "purple": $purple-1,
+  "dark": $gray-1,
+  "gray": $gray-5
+) !default;
+
 // font weights
 $font-weight-light: 300;
 $font-weight-regular: 400;
@@ -33,3 +45,15 @@ $font-weight-heavy: 900;
 // fonts
 $merriweather: 'Merriweather Sans', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
+
+// Button font sizes
+$button-small-font-size: 0.75rem;
+$button-medium-font-size: 0.875rem;
+$button-large-font-size: 1rem;
+$button-huge-font-size: 1.25rem;
+
+// Button padding sizes
+$button-small-padding: 0.5rem 0.625rem;
+$button-medium-padding: 0.625rem 0.75rem;
+$button-large-padding: 0.875rem 1rem;
+$button-huge-padding: 1rem 1.25rem;

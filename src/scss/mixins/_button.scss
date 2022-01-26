@@ -1,0 +1,73 @@
+@mixin button-color-variant($variant-color) {
+  $variant-color-darken: darken($variant-color, 10%);
+  $variant-color-lighten: lighten($variant-color, 20%);
+
+  @if $variant-color == $gray-5 {
+    color: $gray-1 !important;
+  }
+
+  color: $white;
+  background-color: $variant-color;
+  border-color: $variant-color;
+
+  &:hover:not([disabled]) {
+    background-color: $variant-color-darken;
+    border-color: $variant-color-darken;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    outline: 0;
+    background-color: $variant-color-darken;
+    border-color: $variant-color-darken;
+  }
+
+  &:disabled,
+  &.disabled {
+    @if $variant-color == $gray-5 {
+      background-color: $variant-color !important;
+    }
+    background-color: $variant-color-lighten;
+    border-color: $variant-color-lighten;
+    color: $white;
+  }
+}
+
+@mixin button-outlined-color-variant($variant-color) {
+  $variant-color-lighten: lighten($variant-color, 20%);
+
+  background-color: transparent;
+  color: $variant-color;
+  border-color: $variant-color;
+
+  &:hover:not([disabled]) {
+    @if $variant-color == $gray-5 {
+      background-color: transparent !important;
+      border-color: $gray-1 !important;
+    }
+    background-color: $variant-color;
+    color: $white;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    @if $variant-color == $gray-5 {
+      background-color: transparent !important;
+      border-color: $gray-1 !important;
+    }
+    outline: 0;
+    background-color: $variant-color;
+    color: $white;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $variant-color-lighten;
+    border-color: $variant-color-lighten;
+    background-color: transparent;
+  }
+}
