@@ -47,16 +47,18 @@ $merriweather: 'Merriweather Sans', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
 
 // Button font sizes
+$button-tiny-font-size: 0.625rem;
 $button-small-font-size: 0.75rem;
 $button-medium-font-size: 0.875rem;
 $button-large-font-size: 1rem;
-$button-huge-font-size: 1.25rem;
+$button-extra-large-font-size: 1.25rem;
 
 // Button padding sizes
+$button-tiny-padding: 0.313rem 0.5rem;
 $button-small-padding: 0.5rem 0.625rem;
 $button-medium-padding: 0.625rem 0.75rem;
 $button-large-padding: 0.875rem 1rem;
-$button-huge-padding: 1rem 1.25rem;
+$button-extra-large-padding: 1rem 1.25rem;
 
 // Screen breakpoints
 $screen-breakpoint-tiny: 360px;

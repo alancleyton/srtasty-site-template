@@ -18,21 +18,18 @@
   &:disabled {
     cursor: default;
   }
-
   // Button variant colors
   @each $variant, $color in $colors-variants {
     &.#{$variant} {
       @include button-color-variant($color);
     }
   }
-
   // Button variant colors outlined
   @each $variant, $color in $colors-variants {
     &.#{$variant}.outlined {
       @include button-outlined-color-variant($color);
     }
   }
-
   // Button link variant
   &.link {
     background-color: transparent !important;
@@ -50,8 +47,11 @@
       color: $dark-2;
     }
   }
-
   // Button sizes
+  &.tiny {
+    padding: $button-tiny-padding;
+    font-size: $button-tiny-font-size;
+  }
   &.small {
     padding: $button-small-padding;
     font-size: $button-small-font-size;
@@ -64,16 +64,14 @@
     padding: $button-large-padding;
     font-size: $button-large-font-size;
   }
-  &.huge {
-    padding: $button-huge-padding;
-    font-size: $button-huge-font-size;
+  &.x-large {
+    padding: $button-extra-large-padding;
+    font-size: $button-extra-large-font-size;
   }
-
   // Pill button
   &.pill {
     border-radius: 9999px !important;
   }
-
   // Full width button
   &.block {
     width: 100% !important;
