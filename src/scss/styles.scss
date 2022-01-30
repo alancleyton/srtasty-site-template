@@ -1,11 +1,10 @@
 // Abstracts
 @import "abstracts/variables";
-
 // Base
 @import "base/reset";
-
 // Mixins
-@import "mixins/button";
-
+@import "mixins/buttons";
 // Components
-@import "components/button";
+@import "components/buttons";
+// Layout
+@import "layout/containers";

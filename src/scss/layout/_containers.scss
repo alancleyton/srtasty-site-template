@@ -1,0 +1,17 @@
+// Content container
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $screen-breakpoint-extra-large;
+  padding: 0.5rem 0.75rem;
+  &.fluid {
+    max-width: 100%;
+  }
+  &.big {
+    max-width: $screen-breakpoint-big;
+  }
+  &.huge {
+    max-width: $screen-breakpoint-huge;
+  }
+}
