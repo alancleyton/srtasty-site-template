@@ -1,0 +1,47 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+
+  // navbar burger toglle button
+  &-burger {
+    position: relative;
+    margin-left: auto !important;
+    height: 36px;
+    width: 32px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    @media only screen and (min-width: $screen-breakpoint-medium) {
+      display: none;
+    }
+    &.active,
+    &:active {
+      outline: none;
+    }
+    &-icon {
+      span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        background-color: $gray-2;
+        &:nth-child(1) {
+          top: 9px;
+        }
+        &:nth-child(2) {
+          top: 18px;
+        }
+        &:nth-child(3) {
+          top: 27px;
+        }
+      }
+    }
+  }
+}
