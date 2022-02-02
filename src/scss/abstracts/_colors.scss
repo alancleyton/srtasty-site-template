@@ -1,0 +1,6 @@
+// Colors helper classes
+@each $variant, $color in $colors-variants {
+  .color-#{$variant} {
+    color: $color !important;
+  }
+}
