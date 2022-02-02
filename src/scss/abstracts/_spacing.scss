@@ -1,0 +1,60 @@
+// margin
+@each $size-prefix, $size in $spacing-sizes {
+  .m-#{$size-prefix} {
+    margin: $size !important;
+  }
+}
+// margin top
+@each $size-prefix, $size in $spacing-sizes {
+  .mt-#{$size-prefix} {
+    margin-top: $size !important;
+  }
+}
+// margin right
+@each $size-prefix, $size in $spacing-sizes {
+  .mr-#{$size-prefix} {
+    margin-right: $size !important;
+  }
+}
+// margin bottom
+@each $size-prefix, $size in $spacing-sizes {
+  .mb-#{$size-prefix} {
+    margin-bottom: $size !important;
+  }
+}
+// margin left
+@each $size-prefix, $size in $spacing-sizes {
+  .ml-#{$size-prefix} {
+    margin-left: $size !important;
+  }
+}
+// padding
+@each $size-prefix, $size in $spacing-sizes {
+  .p-#{$size-prefix} {
+    padding: $size !important;
+  }
+}
+// padding  top
+@each $size-prefix, $size in $spacing-sizes {
+  .pt-#{$size-prefix} {
+    padding-top: $size !important;
+  }
+}
+// padding right
+@each $size-prefix, $size in $spacing-sizes {
+  .pr-#{$size-prefix} {
+    padding-right: $size !important;
+  }
+}
+// padding bottom
+@each $size-prefix, $size in $spacing-sizes {
+  .pb-#{$size-prefix} {
+    padding-bottom: $size !important;
+  }
+}
+// padding left
+@each $size-prefix, $size in $spacing-sizes {
+  .pl-#{$size-prefix} {
+    padding-left: $size !important;
+  }
+}
