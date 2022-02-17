@@ -3,11 +3,11 @@
   min-height: 3.5rem;
   width: 100%;
   background-color: $white;
-  &.navigation {
+  &-nav {
     display: flex;
     align-items: center;
   }
-  &.wrap {
+  &-collapse {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -24,18 +24,8 @@
       }
     }
   }
-  .item {
-    &.left {
-      margin-right: auto;
-    }
-    &.center {
-      margin: 0 auto;
-    }
-    &.right {
-      margin-left:  auto;
-    }
-  }
-  .menu {
+
+  &-menu {
     &.item {
       margin: 0.5rem 1.5rem;
       font-family: $montserrat;
