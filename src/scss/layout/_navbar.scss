@@ -1,46 +1,54 @@
 .navbar {
   position: relative;
-  display: flex;
-  align-items: center;
+  min-height: 3.5rem;
   width: 100%;
-  padding: 0.5rem 0.75rem;
-
-  // navbar burger toglle button
-  &-burger {
-    position: relative;
-    margin-left: auto !important;
-    height: 36px;
-    width: 32px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    background-color: transparent;
-    cursor: pointer;
-    @media only screen and (min-width: $screen-breakpoint-medium) {
-      display: none;
+  background-color: $white;
+  &.navigation {
+    display: flex;
+    align-items: center;
+  }
+  &.wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    &.collapse-md {
+      @media only screen and (max-width: $screen-breakpoint-medium) {
+        display: none;
+      }
     }
-    &.active,
-    &:active {
-      outline: none;
+    &.collapse-lg {
+      @media only screen and (max-width: $screen-breakpoint-large) {
+        display: none;
+      }
     }
-    &-icon {
-      span {
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        left: 0;
-        background-color: $gray-2;
-        &:nth-child(1) {
-          top: 9px;
-        }
-        &:nth-child(2) {
-          top: 18px;
-        }
-        &:nth-child(3) {
-          top: 27px;
-        }
+  }
+  .item {
+    &.left {
+      margin-right: auto;
+    }
+    &.center {
+      margin: 0 auto;
+    }
+    &.right {
+      margin-left:  auto;
+    }
+  }
+  .menu {
+    &.item {
+      margin: 0.5rem 1.5rem;
+      font-family: $montserrat;
+      font-size: 1rem;
+      font-weight: $font-weight-medium;
+      line-height: 120%;
+      color: $gray-1;
+      cursor: pointer;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      &:hover,
+      &.hover {
+        color: $purple-1;
       }
     }
   }

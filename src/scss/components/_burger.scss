@@ -31,9 +31,13 @@
       }
     }
   }
-  // burger responsive class, only displayable for small screens
-  &.responsive {
+  &.expand-md {
     @media only screen and (min-width: $screen-breakpoint-medium) {
+      display: none;
+    }
+  }
+  &.expand-lg {
+    @media only screen and (min-width: $screen-breakpoint-large) {
       display: none;
     }
   }
