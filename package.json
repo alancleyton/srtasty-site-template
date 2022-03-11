@@ -1,22 +1,22 @@
 {
-  "name": "srtasty_webapp_template",
+  "name": "srtasty-site-template",
   "version": "1.0.0",
-  "description": "Simple food delivery web app template",
+  "description": "Food delivery web site template",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alancleyton/srtasty_webapp_template.git"
+    "url": "git+https://github.com/alancleyton/srtasty-site-template.git"
   },
   "keywords": [],
   "author": "Alan Cleyton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alancleyton/srtasty_webapp_template/issues"
+    "url": "https://github.com/alancleyton/srtasty-site-template/issues"
   },
-  "homepage": "https://github.com/alancleyton/srtasty_webapp_template#readme",
+  "homepage": "https://github.com/alancleyton/srtasty-site-template#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "cssnano": "^5.0.16",
