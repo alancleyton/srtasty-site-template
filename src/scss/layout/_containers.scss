@@ -3,15 +3,21 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: $screen-breakpoint-extra-large;
+  max-width: $screen-breakpoint-huge;
   padding: 0.5rem 0.75rem;
-  &.fluid {
-    max-width: 100%;
+  &.medium {
+    max-width: $screen-breakpoint-medium;
+  }
+  &.large {
+    max-width: $screen-breakpoint-large;
+  }
+  &.huge {
+    max-width: $screen-breakpoint-huge;
   }
   &.big {
     max-width: $screen-breakpoint-big;
   }
-  &.huge {
-    max-width: $screen-breakpoint-huge;
+  &.fluid {
+    max-width: 100%;
   }
 }
