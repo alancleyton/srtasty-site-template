@@ -51,14 +51,14 @@ $button-tiny-font-size: 0.625rem;
 $button-small-font-size: 0.75rem;
 $button-medium-font-size: 0.875rem;
 $button-large-font-size: 1rem;
-$button-extra-large-font-size: 1.25rem;
+$button-huge-font-size: 1.25rem;
 
 // Button padding sizes
 $button-tiny-padding: 0.313rem 0.5rem;
 $button-small-padding: 0.5rem 0.625rem;
 $button-medium-padding: 0.625rem 0.75rem;
 $button-large-padding: 0.875rem 1rem;
-$button-extra-large-padding: 1rem 1.25rem;
+$button-huge-padding: 1rem 1.25rem;
 
 // Screen breakpoints
 $screen-breakpoint-tiny: 360px;
@@ -78,4 +78,6 @@ $spacing-sizes: (
   "4": 1rem,
   "5": 1.5rem,
   "6": 3rem,
+  "7": 4rem,
+  "8": 5rem
 ) !default;

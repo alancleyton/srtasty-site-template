@@ -1,5 +1,6 @@
-.button {
-  display: inline-block;
+.btn {
+  display: inline-flex;
+  align-items: center;
   padding: 0.5rem 1rem;
   color: $gray-1;
   appearance: button;
@@ -18,20 +19,23 @@
   &:disabled {
     cursor: default;
   }
+
   // Button variant colors
   @each $variant, $color in $colors-variants {
-    &.#{$variant} {
+    &--#{$variant} {
       @include button-color-variant($color);
     }
   }
+
   // Button variant colors outlined
   @each $variant, $color in $colors-variants {
-    &.#{$variant}.outlined {
+    &--#{$variant}-outlined {
       @include button-outlined-color-variant($color);
     }
   }
+
   // Button link variant
-  &.link {
+  &--link {
     background-color: transparent !important;
     border-color: transparent !important;
     color: $dark-2;
@@ -47,33 +51,37 @@
       color: $dark-2;
     }
   }
+
   // Button sizes
-  &.tiny {
+  &--tiny {
     padding: $button-tiny-padding;
     font-size: $button-tiny-font-size;
   }
-  &.small {
+  &--small {
     padding: $button-small-padding;
     font-size: $button-small-font-size;
   }
-  &.medium {
+  &--medium {
     padding: $button-medium-padding;
     font-size: $button-medium-font-size;
   }
-  &.large {
+  &--large {
     padding: $button-large-padding;
     font-size: $button-large-font-size;
   }
-  &.x-large {
-    padding: $button-extra-large-padding;
-    font-size: $button-extra-large-font-size;
+  &--huge {
+    padding: $button-huge-padding;
+    font-size: $button-huge-font-size;
   }
+
   // Pill button
   &.pill {
     border-radius: 9999px !important;
   }
+
   // Full width button
   &.block {
+    display: block;
     width: 100% !important;
   }
 }
