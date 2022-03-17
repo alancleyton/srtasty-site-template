@@ -29,7 +29,7 @@
 
   // Button variant colors outlined
   @each $variant, $color in $colors-variants {
-    &--#{$variant}-outlined {
+    &--#{$variant}-outline {
       @include button-outlined-color-variant($color);
     }
   }

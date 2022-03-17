@@ -1,21 +1,22 @@
-import './button.css';
+import '../css/styles.css';
 
 export const createButton = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
   label,
-  onClick,
+  variant = 'green',
+  size = 'medium',
+  outlined = false,
+  pill = false,
+  block = false,
 }) => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.innerText = label;
-  btn.addEventListener('click', onClick);
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.innerText = label;
 
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  btn.className = ['storybook-button', `storybook-button--${size}`, mode].join(' ');
-
-  btn.style.backgroundColor = backgroundColor;
-
-  return btn;
-};
+  const buttonVariant = outlined ? `btn--${variant}-outline` : `btn--${variant}`;
+  button.classList.add('btn');
+  button.classList.add(buttonVariant);
+  button.classList.add(`btn--${size}`);
+  pill && button.classList.add('pill');
+  block && button.classList.add('block');
+  return button;
+}

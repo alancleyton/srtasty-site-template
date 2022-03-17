@@ -1,48 +1,114 @@
 import { createButton } from './Button';
 
-// More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
-  // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
+  title: 'Components/Button',
   argTypes: {
-    backgroundColor: { control: 'color' },
     label: { control: 'text' },
-    onClick: { action: 'onClick' },
-    primary: { control: 'boolean' },
+    variant: {
+      control: { type: 'select' },
+      options: [
+        'red',
+        'orange',
+        'yellow',
+        'green',
+        'blue',
+        'purple',
+        'dark',
+        'gray',
+        'link'
+      ]
+    },
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: [
+        'tiny',
+        'small',
+        'medium',
+        'large',
+        'huge'
+      ],
     },
+    outlined: { control: 'boolean' },
+    pill: { control: 'boolean' },
+    block: { control: 'boolean' }
   },
 };
 
-// More on component templates: https://storybook.js.org/docs/html/writing-stories/introduction#using-args
 const Template = ({ label, ...args }) => {
-  // You can either use a function to create DOM elements or use a plain html string!
-  // return `<div>${label}</div>`;
   return createButton({ label, ...args });
 };
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/html/writing-stories/args
-Primary.args = {
-  primary: true,
+export const Red = Template.bind({});
+Red.args = {
   label: 'Button',
+  variant: 'red'
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Orange = Template.bind({});
+Orange.args = {
   label: 'Button',
+  variant: 'orange'
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
+export const Yellow = Template.bind({});
+Yellow.args = {
   label: 'Button',
+  variant: 'yellow'
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
+export const Green = Template.bind({});
+Green.args = {
   label: 'Button',
+  variant: 'green'
 };
+
+export const Blue = Template.bind({});
+Blue.args = {
+  label: 'Button',
+  variant: 'blue'
+};
+
+export const Purple = Template.bind({});
+Purple.args = {
+  label: 'Button',
+  variant: 'purple'
+};
+
+export const Dark = Template.bind({});
+Dark.args = {
+  label: 'Button',
+  variant: 'dark'
+};
+
+export const Gray = Template.bind({});
+Gray.args = {
+  label: 'Button',
+  variant: 'gray'
+};
+
+export const Link = Template.bind({});
+Link.args = {
+  label: 'Button',
+  variant: 'link'
+};
+
+export const Outline = Template.bind({});
+Outline.args = {
+  label: 'Button',
+  variant: 'green',
+  outlined: true,
+}
+
+export const Pill = Template.bind({});
+Pill.args = {
+  label: 'Button',
+  variant: 'green',
+  pill: true,
+}
+
+export const Block = Template.bind({});
+Block.args = {
+  label: 'Button',
+  variant: 'blue',
+  block: true,
+}
